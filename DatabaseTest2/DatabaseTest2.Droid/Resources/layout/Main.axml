@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+  
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <Button
+        android:id="@+id/addempButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADD EMPLOYEE" />
+    <Button
+        android:id="@+id/adddutyButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADD DUTY" />
+   <Button
+        android:id="@+id/assignButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ASSIGN DUTY TO EMP" />
+  <Button
+        android:id="@+id/showButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SHOW" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/empfield"
+        android:visibility="gone">
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:hint="Enter Name..." />
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lname"
+            android:hint="Enter Last Name..." />
+      <Button
+           android:id="@+id/saveempButton"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="SAVE" />
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/dutyfield"
+        android:visibility="gone">
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/description"
+            android:hint="Enter Description..." />
+      <Button
+          android:id="@+id/savedutyButton"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="SAVE" />
+    </LinearLayout>
+  <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/assignfield"
+        android:visibility="gone">
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Max 3 duties can be assign:"    
+      />
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/empId"
+        android:hint="Enter empID..." />
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/duty1ID"
+        android:hint="Enter Duty1 ID..." />
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/duty2ID"
+        android:hint="Enter Duty2 ID..." />
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/duty3ID"
+        android:hint="Enter Duty3 ID..." />
+    <Button
+          android:id="@+id/saveassignButton"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="SAVE" />
+  </LinearLayout>
+</LinearLayout>
+</ScrollView>
