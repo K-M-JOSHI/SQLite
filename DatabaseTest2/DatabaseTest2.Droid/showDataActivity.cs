@@ -26,6 +26,8 @@ namespace DatabaseTest2.Droid
         Button show;
         protected override void OnCreate(Bundle savedInstanceState)
         {
+            //Demo
+
             base.OnCreate(savedInstanceState);
             SetContentView(Resource.Layout.showData);
             id = FindViewById<EditText>(Resource.Id.empDataID);
@@ -53,6 +55,7 @@ namespace DatabaseTest2.Droid
             foreach (var a in v.Duties)
             {
                 duties.Text += a.Description + " ";
+                
             }
         }
     }
